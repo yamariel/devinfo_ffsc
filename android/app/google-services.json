@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "944529657927",
+    "project_id": "devinfo-ffsc",
+    "storage_bucket": "devinfo-ffsc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944529657927:android:1339feac43dc3a1499a162",
+        "android_client_info": {
+          "package_name": "com.yamariel.dev_info.org.devinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944529657927-lsp1tjm14gd1mhjrckskf38vso28st2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yamariel.dev_info.org.devinfo",
+            "certificate_hash": "865021d84ad6d0b6019bd0003864fb7dbd3329d3"
+          }
+        },
+        {
+          "client_id": "944529657927-g9hlb226p5p9vvbtkoa2gkfep3iq16v5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYZMacaxpnrnOykrgyUcCSbapVceN5h4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "944529657927-g9hlb226p5p9vvbtkoa2gkfep3iq16v5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "944529657927-348cc49qe04rrvf05t2rul4ei87h8366.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yamariel.devinfo.org.devinfo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
