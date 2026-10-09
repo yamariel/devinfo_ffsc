@@ -10,6 +10,6 @@ class HiveService {
 
     Hive.registerAdapter(ArticleModelAdapter());
 
-    await Hive.openBox(articlesBoxName);
+    await Hive.openBox<ArticleModel>(articlesBoxName);
   }
 }
