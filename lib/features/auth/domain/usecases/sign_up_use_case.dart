@@ -1,9 +1,9 @@
 import '../entities/user_entity.dart';
 import '../repositories/auth_repository.dart';
 
-class SignInUseCase {
+class SignUpUseCase {
   final AuthRepository repository;
-  SignInUseCase({required this.repository});
+  SignUpUseCase({required this.repository});
 
   Future<UserEntity> call({
     required String email,
