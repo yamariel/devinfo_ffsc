@@ -14,7 +14,7 @@ class NewsNotifier extends AsyncNotifier<List<ArticleEntity>> {
   Future<void> refresh() async {
     state = const AsyncValue.loading();
     state = await AsyncValue.guard(() async {
-      final getArticleUseCase = ref.watch(getArticleUseCaseProvider);
+      final getArticleUseCase = ref.read(getArticleUseCaseProvider);
       return getArticleUseCase.call();
     });
   }
