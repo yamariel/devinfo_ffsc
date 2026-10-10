@@ -49,3 +49,8 @@ final articleRepositoryProvider = Provider<ArticleRepository>(
 final getArticleUseCaseProvider = Provider<GetArticlesUsecase>(
   (ref) => GetArticlesUsecase(repository: ref.watch(articleRepositoryProvider)),
 );
+
+final articleContentProvider = FutureProvider.family<String, int>(
+  (ref, articleId) =>
+      ref.watch(articleRepositoryProvider).getArticleContent(articleId),
+);
