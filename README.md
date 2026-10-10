@@ -214,7 +214,9 @@ bottomNavigationBar: BottomNavigationBar(
 ),
 ```
 
-La page Vidéo est pour l’instant un écran placeholder ; la navigation vers celle-ci existe, mais sa fonctionnalité reste à développer.
+L’onglet Vidéo charge les vidéos depuis l’API DEV.to, affiche leur titre, leur auteur et leur miniature lorsqu’elle est disponible. Pour YouTube, `video_source_url` est convertie en URL `/embed/` puis lue dans une WebView intégrée à l’application.
+
+**Fichiers principaux :** `lib/features/videos/data/`, `lib/features/videos/domain/` et `lib/features/videos/presentation/`.
 
 ### 6. Consulter son profil et se déconnecter
 
