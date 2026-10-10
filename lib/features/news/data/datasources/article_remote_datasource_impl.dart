@@ -12,4 +12,14 @@ class ArticleRemoteDatasourceImpl implements ArticleRemoteDatasource {
     final List list = response.data;
     return list.map((json) => ArticleModel.fromJson(json)).toList();
   }
+
+  @override
+  Future<String> getArticleContent(int articleId) async {
+    final response = await dio.get('/articles/$articleId');
+    final content = response.data['body_html'];
+    if (content is! String || content.isEmpty) {
+      throw const FormatException('Le contenu de l’article est indisponible.');
+    }
+    return content;
+  }
 }
