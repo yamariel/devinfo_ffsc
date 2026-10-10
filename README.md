@@ -4,6 +4,41 @@ Application Flutter de lecture d’articles de développement, avec authentifica
 
 Ce README relie chaque exigence fonctionnelle à son implémentation : fichier, lignes concernées et aperçu du code. Les numéros de ligne correspondent aux fichiers du dépôt au moment de la rédaction.
 
+## Arborescence du projet
+
+```text
+devinfo_ffsc/
+├── assets/
+│   ├── fonts/
+│   └── images/
+├── lib/
+│   ├── core/
+│   │   ├── errors/                 # Exceptions, échecs et erreurs Firebase
+│   │   ├── network/                # Client Dio, intercepteur et état réseau
+│   │   ├── router/                 # Routes et navigation par onglets
+│   │   ├── storage/                # Initialisation et cache Hive
+│   │   ├── theme/                  # Thèmes clair et sombre
+│   │   └── utils/
+│   ├── features/
+│   │   ├── auth/
+│   │   │   ├── data/               # Firebase, modèles et repository
+│   │   │   ├── domain/             # Entité, contrat et cas d’utilisation
+│   │   │   └── presentation/       # Pages, widgets et providers
+│   │   └── news/
+│   │       ├── data/               # API DEV.to, cache Hive et repository
+│   │       ├── domain/             # Entité, contrat et cas d’utilisation
+│   │       └── presentation/       # Pages, cartes et providers
+│   ├── firebase_options.dart
+│   └── main.dart                   # Initialisation et lancement
+├── test/
+│   └── features/
+│       ├── auth/data/repositories/
+│       └── news/data/repositories/
+└── README.md
+```
+
+Les dossiers générés par Flutter et les fichiers natifs internes sont omis pour garder cette vue centrée sur l’organisation fonctionnelle du projet.
+
 ## Exigences du projet et preuves dans le code
 
 ### 1. Initialiser Firebase, Hive et l’application Flutter
