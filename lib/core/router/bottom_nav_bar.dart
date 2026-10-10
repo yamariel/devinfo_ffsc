@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../features/news/presentation/pages/home_page.dart';
 import '../../features/news/presentation/pages/profile_page.dart';
-import '../../features/news/presentation/pages/video_page.dart';
+import '../../features/videos/presentation/views/video_page.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});
