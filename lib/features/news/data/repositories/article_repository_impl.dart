@@ -31,4 +31,9 @@ class ArticleRepositoryImpl implements ArticleRepository {
       return cachedArticles.map((model) => model.toEntity()).toList();
     }
   }
+
+  @override
+  Future<String> getArticleContent(int articleId) {
+    return remoteDatasource.getArticleContent(articleId);
+  }
 }
